@@ -1,0 +1,32 @@
+Hey!
+
+This is a file what will have almost 2000 buttons in it in future... 
+So, it's imp to look after the loading speed... 
+
+So, data is called by ajax after the entire page once loads... 
+So, the data need to be called by ajax... 
+
+While any button been added, notice:  
+
+this -------->
+  $url0 = $("#0").data("remote");
+:small_airplane:
+and this ------>
+    $.post("ajax.php", {
+        sendingTo: "urls",
+        mainurl: $url0
+    }, function (data, status) {
+        $("#0").attr("data-original-title", data);
+    });
+
+
+ code is better to uplpoad directly to database and fetch it from databse while it loads by a while loop, 
+ these will make the javascript call using php and database; easier hope so...
+
+ You also can do either easier process for work... 
+ This is how I thought... 
+
+ Some process are also clearified in the "scripts.php"  file... Read the reasons I mentioned... 
+
+Thanks... Happy Coding... 🛩️🥈🥈🛩️
+
